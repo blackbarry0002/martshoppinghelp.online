@@ -5,6 +5,7 @@ import { PrelaunchBanner } from "@/components/PrelaunchBanner";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { site } from "@/config/site";
+import { ogImage } from "@/lib/metadata";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -16,8 +17,8 @@ export const metadata: Metadata = {
   description: site.description,
   applicationName: site.name,
   alternates: { canonical: "/" },
-  openGraph: { siteName: site.name, type: "website", locale: "en_US", url: "/" },
-  twitter: { card: "summary_large_image" },
+  openGraph: { siteName: site.name, type: "website", locale: "en_US", url: "/", images: [ogImage] },
+  twitter: { card: "summary_large_image", images: [ogImage.url] },
   formatDetection: { telephone: false },
   // Keep preview builds out of search results until real details are in place.
   robots: site.prelaunch ? { index: false, follow: false } : { index: true, follow: true },

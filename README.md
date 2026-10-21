@@ -14,6 +14,14 @@ npm run typecheck
 
 Requires Node.js 18.18+ (20 LTS or newer recommended).
 
+## Deployment (GitHub Pages)
+
+The site is a static export (`output: "export"` in `next.config.ts`); `npm run build` writes plain HTML to `out/`.
+Every push to `main` runs [.github/workflows/deploy.yml](.github/workflows/deploy.yml), which builds the site and publishes
+`out/` to GitHub Pages. `public/CNAME` keeps the custom domain `martshoppinghelp.online` attached.
+
+One-time setup: in the repo's **Settings → Pages**, set **Source** to **GitHub Actions**.
+
 ## Where things live
 
 | Path | What it is |
@@ -22,7 +30,8 @@ Requires Node.js 18.18+ (20 LTS or newer recommended).
 | `src/config/routes.ts` | Navigation and sitemap routes |
 | `src/content/` | FAQ entries and shopping categories |
 | `src/components/sections/` | Homepage sections (also reused on inner pages) |
-| `src/app/` | Pages, sitemap, robots, icon, Open Graph image |
+| `src/app/` | Pages, sitemap, robots, icon |
+| `public/` | Static files: `og.png` share image, `CNAME`, `.nojekyll` |
 
 Every call button is a `tel:` link carrying `data-cta="call"` and a `data-placement` attribute, so call-tracking or
 Google Ads conversion tags can tell which placement drove the call.

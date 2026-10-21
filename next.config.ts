@@ -9,21 +9,11 @@ if (site.prelaunch || site.phone.isPlaceholder) {
 }
 
 const nextConfig: NextConfig = {
+  // Static HTML export for GitHub Pages (see .github/workflows/deploy.yml).
+  // Pages can't set response headers, so security headers must come from a CDN if needed.
+  output: "export",
   reactStrictMode: true,
   poweredByHeader: false,
-  async headers() {
-    return [
-      {
-        source: "/:path*",
-        headers: [
-          { key: "X-Content-Type-Options", value: "nosniff" },
-          { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
-          { key: "X-Frame-Options", value: "DENY" },
-          { key: "Permissions-Policy", value: "camera=(), microphone=(), geolocation=()" },
-        ],
-      },
-    ];
-  },
 };
 
 export default nextConfig;
