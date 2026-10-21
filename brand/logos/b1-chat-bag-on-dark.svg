@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 64" width="340" height="64" role="img" aria-label="Mart Shopping Help">
+<g transform="translate(0 4) scale(1.75)"><path d="M7 3h18a5 5 0 0 1 5 5v12a5 5 0 0 1-5 5H15l-6.5 5v-5H7a5 5 0 0 1-5-5V8a5 5 0 0 1 5-5Z" fill="#FFFFFF"/>
+<path d="M10 11.5h12l-1.1 9.2a1.6 1.6 0 0 1-1.6 1.4h-6.6a1.6 1.6 0 0 1-1.6-1.4Z" fill="#1769AA"/>
+<path d="M13.2 11.5v-1.2a2.8 2.8 0 0 1 5.6 0v1.2" fill="none" stroke="#1769AA" stroke-width="1.8" stroke-linecap="round"/>
+<path d="m13.4 16.6 1.9 1.9 3.4-3.6" fill="none" stroke="#FFFFFF" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="26.5" cy="6.5" r="2.2" fill="#FFC94A"/></g>
+<text x="70" y="31" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="25" font-weight="800" letter-spacing="-0.4" fill="#FFFFFF">Mart Shopping <tspan fill="#FFC94A">Help</tspan></text>
+<text x="70" y="51" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif" font-size="10.5" font-weight="700" letter-spacing="1.6" fill="rgba(255,255,255,0.72)">INDEPENDENT SHOPPING ASSISTANCE</text>
+</svg>
