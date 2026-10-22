@@ -38,6 +38,9 @@ export const site = {
     summary: null as string | null,
   },
 
+  /** Google Ads tag (gtag.js). Set to null to remove the tag from every page. */
+  googleAdsId: "AW-18430161458" as string | null,
+
   lastUpdated: "2026-10-21",
 } as const;
 
