@@ -54,7 +54,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               {`window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', '${site.googleAdsId}');`}
+gtag('config', '${site.googleAdsId}');${
+                site.googleAdsLeadConversion
+                  ? `
+// Count a lead each time a visitor taps a call button or phone link.
+document.addEventListener('click', function (e) {
+  var link = e.target && e.target.closest && e.target.closest('a[data-cta="call"]');
+  if (link) gtag('event', 'conversion', { send_to: '${site.googleAdsLeadConversion}', transport_type: 'beacon' });
+}, true);`
+                  : ""
+              }`}
             </Script>
           </>
         )}

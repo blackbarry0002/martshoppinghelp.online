@@ -40,6 +40,8 @@ export const site = {
 
   /** Google Ads tag (gtag.js). Set to null to remove the tag from every page. */
   googleAdsId: "AW-18430161458" as string | null,
+  /** "Website lead" conversion, sent when a visitor taps any call button or phone link. */
+  googleAdsLeadConversion: "AW-18430161458/HCZ_CNzdu4kdELLkl9RE" as string | null,
 
   lastUpdated: "2026-10-21",
 } as const;
