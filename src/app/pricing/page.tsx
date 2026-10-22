@@ -14,7 +14,7 @@ export const metadata = pageMetadata({
 
 const commitments = [
   { title: "Price before commitment", text: "We tell you the applicable price for your request before you agree to proceed." },
-  { title: "Scope in plain language", text: "We explain what the agreed help includes — and what it doesn't — so there are no surprises." },
+  { title: "Scope in plain language", text: "We explain what the agreed help includes, and what it doesn't, so there are no surprises." },
   { title: "Your choice to continue", text: "Ask as many questions about scope and price as you like first. You decide whether to go ahead." },
   { title: "No invented deals", text: "We don't advertise fake discounts, countdown offers, or “free” help that turns out not to be." },
 ];
@@ -40,7 +40,7 @@ export default function PricingPage() {
                 </p>
               )}
               <p>
-                The fee covers the guidance we provide. It does not include the cost of any product you decide to buy — you pay sellers
+                The fee covers the guidance we provide. It does not include the cost of any product you decide to buy. You pay sellers
                 directly, on your own, for anything you purchase.
               </p>
               <p>

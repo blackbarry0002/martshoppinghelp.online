@@ -37,7 +37,7 @@ export const faqs: Faq[] = [
   },
   {
     q: "What kinds of products can you help with?",
-    a: "Everyday categories such as home essentials, electronics, appliances, clothing, personal-care products, toys, and home improvement. If you're not sure whether we can help, call and ask — we'll tell you honestly.",
+    a: "Everyday categories such as home essentials, electronics, appliances, clothing, personal-care products, toys, and home improvement. If you're not sure whether we can help, call and ask. We'll tell you honestly.",
   },
   {
     q: "What happens to the information I share on the call?",

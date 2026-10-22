@@ -36,7 +36,7 @@ export default function ServicesPage() {
       <PageHero eyebrow="Shopping services" title="Need help finding the right product?">
         <p>
           Our assistants help you research, compare, and plan purchases across everyday shopping categories. You get guidance from a
-          real person — and you make the final call.
+          real person, and you make the final call.
         </p>
       </PageHero>
 
@@ -78,7 +78,7 @@ export default function ServicesPage() {
         </div>
         <p className="mt-6 text-sm text-muted">
           These categories describe the guidance we offer and do not indicate a partnership with any retailer or brand. Prices,
-          availability, and product details are set by sellers — always confirm them before you buy.
+          availability, and product details are set by sellers, so always confirm them before you buy.
         </p>
         <div className="mt-8">
           <CallButton size="lg" showNumber placement="services-categories" />

@@ -15,7 +15,7 @@ export const metadata = pageMetadata({
 const details = [
   "Have the product type, budget, and any must-have features in mind.",
   "If you're comparing specific items, keep their names or model numbers handy.",
-  "You don't need to share any account logins, passwords, or verification codes — and we will never ask for them.",
+  "You don't need to share any account logins, passwords, or verification codes, and we will never ask for them.",
 ];
 
 export default function HowItWorksPage() {

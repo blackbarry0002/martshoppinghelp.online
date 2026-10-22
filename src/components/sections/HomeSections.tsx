@@ -165,7 +165,7 @@ export function PaidDisclosure() {
           </h2>
           <p className="mt-3 max-w-2xl text-lg leading-relaxed text-muted">
             We tell you what&apos;s included and what it costs before you commit. Ask any questions you have about scope and price
-            first — there&apos;s no obligation to continue.
+            first. There&apos;s no obligation to continue.
           </p>
           {site.pricing.summary && <p className="mt-3 text-lg font-bold text-navy">{site.pricing.summary}</p>}
           <ul className="mt-5 grid gap-2 sm:grid-cols-3">
@@ -206,7 +206,7 @@ export function Independence() {
       <SectionHeading
         id="independence-title"
         eyebrow="Independence & trust"
-        title="An independent service — not a store's support line."
+        title="An independent service, not a store's support line."
         intro={disclosures.independence}
       />
       <div className="mt-10 grid gap-4 md:grid-cols-2">

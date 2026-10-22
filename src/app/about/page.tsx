@@ -12,7 +12,7 @@ export const metadata = pageMetadata({
 });
 
 const principles = [
-  { title: "Honest guidance", text: "We tell you what we can and can't help with — including when the retailer is the right place to go.", Icon: ChatIcon },
+  { title: "Honest guidance", text: "We tell you what we can and can't help with, including when the retailer is the right place to go.", Icon: ChatIcon },
   { title: "Your decision", text: "We share options and trade-offs. You decide what to buy, where, and whether to buy at all.", Icon: CheckIcon },
   { title: "Transparent fees", text: "Our help is paid, and we explain the scope and price before you commit.", Icon: TagIcon },
   { title: "Respect for your privacy", text: "We never ask for account passwords, verification codes, or remote access to your device.", Icon: LockIcon },
@@ -33,7 +33,7 @@ export default function AboutPage() {
           <SectionHeading id="who-title" title="Who we are" />
           <p>
             We are an independent shopping-assistance service. Our assistants help you research products, compare choices, and plan
-            purchases across everyday categories — by phone, in plain language.
+            purchases across everyday categories, by phone and in plain language.
           </p>
           <p>
             We are not a store and we don&apos;t sell products. {disclosures.independence} {disclosures.limits}

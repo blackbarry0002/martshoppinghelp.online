@@ -7,7 +7,9 @@ import { CallButton } from "./CallButton";
 import { ClockIcon, XIcon } from "./icons";
 
 const STORAGE_KEY = "msh-call-popup-seen";
-const DELAY_MS = 20_000;
+const DELAY_MS = 31_000;
+/** Scrolling and exit intent can't open the pop-up before this much time on the page. */
+const MIN_DELAY_MS = 11_000;
 const SCROLL_RATIO = 0.45;
 const SKIP_PATHS = ["/privacy", "/terms", "/refund-policy", "/contact"];
 
@@ -29,7 +31,8 @@ function markSeen() {
 
 /**
  * One-time call prompt. Opens after a delay, after the visitor scrolls
- * partway down, or on desktop exit intent — whichever comes first — and never
+ * partway down, or on desktop exit intent (whichever comes first, but never
+ * within the first MIN_DELAY_MS on the page), and never
  * again in the same session, or at all once the visitor has tapped a call CTA.
  */
 export function CallPopup() {
@@ -46,12 +49,15 @@ export function CallPopup() {
       dialog.showModal();
       cleanup();
     };
+    const start = Date.now();
+    const tooSoon = () => Date.now() - start < MIN_DELAY_MS;
     const onScroll = () => {
+      if (tooSoon()) return;
       const max = document.documentElement.scrollHeight - window.innerHeight;
       if (max > 0 && window.scrollY / max >= SCROLL_RATIO) open();
     };
     const onExit = (e: MouseEvent) => {
-      if (!e.relatedTarget && e.clientY <= 0) open();
+      if (!tooSoon() && !e.relatedTarget && e.clientY <= 0) open();
     };
     const onCall = (e: MouseEvent) => {
       if ((e.target as Element | null)?.closest?.('[data-cta="call"]')) {
@@ -101,7 +107,7 @@ export function CallPopup() {
           Need help choosing today? Call now.
         </h2>
         <p id="call-popup-desc" className="mt-3 leading-relaxed text-white/85">
-          Skip the hours of comparing tabs and reviews. Talk it through with a real shopping assistant right now — and buy with
+          Skip the hours of comparing tabs and reviews. Talk it through with a real shopping assistant right now, and buy with
           confidence.
         </p>
       </div>

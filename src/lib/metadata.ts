@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { site } from "@/config/site";
 
-export const ogImage = { url: "/og.png", width: 1200, height: 630, alt: `${site.name} — independent shopping assistance` };
+export const ogImage = { url: "/og.png", width: 1200, height: 630, alt: `${site.name}: independent shopping assistance` };
 
 export function pageMetadata({ title, description, path }: { title: string; description: string; path: string }): Metadata {
   return {
