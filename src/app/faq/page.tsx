@@ -7,7 +7,7 @@ import { pageMetadata } from "@/lib/metadata";
 export const metadata = pageMetadata({
   title: "Frequently Asked Questions",
   description:
-    "Answers about Mart Shopping Help: what the paid service includes, how pricing works, what we can't do, and how we protect your information.",
+    "Answers about Mart Shopping Assist: what the paid service includes, how pricing works, what we can't do, and how we protect your information.",
   path: "/faq",
 });
 

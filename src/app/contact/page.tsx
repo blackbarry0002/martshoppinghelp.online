@@ -6,7 +6,7 @@ import { pageMetadata } from "@/lib/metadata";
 
 export const metadata = pageMetadata({
   title: "Contact",
-  description: "Contact Mart Shopping Help, an independent paid shopping-assistance service. Call to talk with a real person.",
+  description: "Contact Mart Shopping Assist, an independent paid shopping-assistance service. Call to talk with a real person.",
   path: "/contact",
 });
 

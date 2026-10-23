@@ -8,7 +8,7 @@ import { pageMetadata } from "@/lib/metadata";
 export const metadata = pageMetadata({
   title: "Pricing & Service Fees",
   description:
-    "Mart Shopping Help is a paid service. Learn how fees are explained before you commit, what's included, and how to ask about scope and price.",
+    "Mart Shopping Assist is a paid service. Learn how fees are explained before you commit, what's included, and how to ask about scope and price.",
   path: "/pricing",
 });
 

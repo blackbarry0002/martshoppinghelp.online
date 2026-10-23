@@ -6,7 +6,7 @@ import { pageMetadata } from "@/lib/metadata";
 
 export const metadata = pageMetadata({
   title: "Terms of Service",
-  description: "The terms that govern Mart Shopping Help's independent, paid shopping-assistance service, including its scope and limitations.",
+  description: "The terms that govern Mart Shopping Assist's independent, paid shopping-assistance service, including its scope and limitations.",
   path: "/terms",
 });
 

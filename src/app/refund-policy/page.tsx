@@ -4,7 +4,7 @@ import { pageMetadata } from "@/lib/metadata";
 
 export const metadata = pageMetadata({
   title: "Refund & Cancellation Policy",
-  description: "How cancellations and refunds work for fees paid to Mart Shopping Help for shopping assistance.",
+  description: "How cancellations and refunds work for fees paid to Mart Shopping Assist for shopping assistance.",
   path: "/refund-policy",
 });
 

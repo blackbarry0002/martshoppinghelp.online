@@ -8,7 +8,7 @@ import { pageMetadata } from "@/lib/metadata";
 export const metadata = pageMetadata({
   title: "How It Works",
   description:
-    "Call, explain what you're shopping for, hear the scope and price, then get the guidance you agreed to. Here's what to expect from Mart Shopping Help.",
+    "Call, explain what you're shopping for, hear the scope and price, then get the guidance you agreed to. Here's what to expect from Mart Shopping Assist.",
   path: "/how-it-works",
 });
 

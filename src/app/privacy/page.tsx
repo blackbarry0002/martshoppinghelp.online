@@ -6,7 +6,7 @@ import { pageMetadata } from "@/lib/metadata";
 
 export const metadata = pageMetadata({
   title: "Privacy Policy",
-  description: "How Mart Shopping Help collects, uses, and protects personal information.",
+  description: "How Mart Shopping Assist collects, uses, and protects personal information.",
   path: "/privacy",
 });
 

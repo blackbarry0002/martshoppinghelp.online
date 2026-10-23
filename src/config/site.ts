@@ -7,8 +7,8 @@
  */
 
 export const site = {
-  name: "Mart Shopping Help",
-  url: "https://martshoppinghelp.online",
+  name: "Mart Shopping Assist",
+  url: "https://martshoppingassist.online",
   tagline: "Independent shopping assistance",
   description:
     "Independent, paid shopping assistance. Talk to a real person for help comparing products, finding the right items, and understanding your shopping options.",
@@ -27,7 +27,7 @@ export const site = {
   },
 
   // Optional details. Leave as null to hide them from the site.
-  email: null as string | null, // e.g. "help@martshoppinghelp.online"
+  email: null as string | null, // e.g. "help@martshoppingassist.online"
   hours: null as string | null, // e.g. "Mon–Fri, 9 a.m.–6 p.m. ET"
   legalName: null as string | null, // registered business name
   mailingAddress: null as string | null,
@@ -43,13 +43,13 @@ export const site = {
   /** "Website lead" conversion, sent when a visitor taps any call button or phone link. */
   googleAdsLeadConversion: "AW-18430161458/HCZ_CNzdu4kdELLkl9RE" as string | null,
 
-  lastUpdated: "2026-10-21",
+  lastUpdated: "2026-10-23",
 } as const;
 
 export const disclosures = {
   paid: "Personalized shopping assistance is a paid service. Ask about the scope and applicable price before agreeing to proceed.",
   independence:
-    "Mart Shopping Help is independent and is not affiliated with or endorsed by Walmart or any other retailer.",
+    "Mart Shopping Assist is independent and is not affiliated with or endorsed by Walmart or any other retailer.",
   short: "Independent paid service · No retailer affiliation",
   limits:
     "We cannot access retailer accounts, place or change orders, process returns or refunds, or handle payments on a retailer's behalf.",

@@ -22,11 +22,11 @@ export function LogoMark({ className = "size-9" }: { className?: string }) {
 
 export function Logo({ inverted = false }: { inverted?: boolean }) {
   return (
-    <Link href="/" className="inline-flex shrink-0 items-center gap-2.5" aria-label="Mart Shopping Help home">
+    <Link href="/" className="inline-flex shrink-0 items-center gap-2.5" aria-label="Mart Shopping Assist home">
       <LogoMark />
       <span className="flex flex-col leading-none">
         <span className={`whitespace-nowrap text-lg font-extrabold tracking-tight ${inverted ? "text-white" : "text-navy"}`}>
-          Mart Shopping <span className={inverted ? "text-sun" : "text-action"}>Help</span>
+          Mart Shopping <span className={inverted ? "text-sun" : "text-action"}>Assist</span>
         </span>
         <span className={`mt-1 hidden text-[0.68rem] sm:block font-semibold uppercase tracking-[0.12em] ${inverted ? "text-white/70" : "text-muted"}`}>
           Independent shopping assistance

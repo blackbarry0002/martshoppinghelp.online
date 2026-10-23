@@ -4,8 +4,8 @@ export type Faq = { q: string; a: string };
 
 export const faqs: Faq[] = [
   {
-    q: "What is Mart Shopping Help?",
-    a: "Mart Shopping Help is an independent, paid shopping-assistance service. You talk with a real person who helps you compare products, narrow down options, and think through what to consider before you buy. You make every purchase yourself.",
+    q: "What is Mart Shopping Assist?",
+    a: "Mart Shopping Assist is an independent, paid shopping-assistance service. You talk with a real person who helps you compare products, narrow down options, and think through what to consider before you buy. You make every purchase yourself.",
   },
   {
     q: "Are you Walmart or part of any retailer's customer service?",

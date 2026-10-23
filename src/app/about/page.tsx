@@ -7,7 +7,7 @@ import { pageMetadata } from "@/lib/metadata";
 export const metadata = pageMetadata({
   title: "About Us",
   description:
-    "Mart Shopping Help is an independent shopping-assistance service. We are not a retailer and are not affiliated with Walmart or any other store.",
+    "Mart Shopping Assist is an independent shopping-assistance service. We are not a retailer and are not affiliated with Walmart or any other store.",
   path: "/about",
 });
 
@@ -23,7 +23,7 @@ export default function AboutPage() {
     <>
       <PageHero eyebrow="About us" title="Independent help for everyday shopping decisions.">
         <p>
-          Mart Shopping Help exists for people who would rather talk a purchase through with someone than sort through endless
+          Mart Shopping Assist exists for people who would rather talk a purchase through with someone than sort through endless
           listings alone.
         </p>
       </PageHero>
